@@ -1,81 +1,191 @@
-<!DOCTYPE html>
-<html>
-  <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
-    <title>Site founded &middot; GitHub Pages</title>
-    <style type="text/css" media="screen">
-      body {
-       	background-color: #f1f1f1;
-       	margin: 0;
-       	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
-
-      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
-
-      a { color: #4183c4; text-decoration: none; }
-      a:hover { text-decoration: underline; }
-
-      h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
-      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
-
-      ul { list-style: none; margin: 25px 0; padding: 0; }
-      li { display: table-cell; font-weight: bold; width: 1%; }
-
-      .logo { display: inline-block; margin-top: 35px; }
-      .logo-img-2x { display: none; }
-  </head>
-  <body  style="background-color:#F1F1F1;">
-    <style>
-    	a { color: #4183c4; text-decoration: none; }
-			a:hover { text-decoration: underline; }
-      #suggestions a {
-        color: #666666;
-        font-weight: 200;
-        font-size: 14px;
-        margin: 0 10px;
-      }
-	h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
-	p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
-   </style>
-    <div class="container">
-      <h1 align="center">404</h1>
-      <p align="center"><strong>There is a GitHub Pages site here.</strong></p>
-      <p align="center">
-        <strong>Welcome to this website!</strong>
-      </p>
-    </div>
-  </body>
-  </html>
-  <style>
-    .botCenter{width:100%; height:35px; line-height:35px; background:#FFFFFF; position:fixed; bottom:0px; left:0px; font-size:14px; color:#000; text-align:center;}
-  </style>
-</head>
-<body>
-  <div class="botCenter"><a href="https://alwayswalker.github.io/index/">index</a> <a href="https://alwayswalker.github.io/musics/">musics</a></div>
-</body>
-
-<p></p>
-<p align="center">How about listen some music?</p>
-<p align="center"><strong>Shots</strong></p>
-<p align="center">
-  <video width="320" height="80" controls="controls" autoplay="autoplay">
-    <source src="http://m10.music.126.net/20220910221437/ce33f9eb1aef36110f6fb8092a0583d7/ymusic/128c/8a24/99fe/76b8165c4b3326b12e0f227a80ca39c5.mp3" />
-  </video>
-</p>
-<p align="center">
-  <a href="https://github.com/AlwaysWalker">
-    <strong>The owner</strong>
-  </a>
-</p>
-  <html>
-  <head>
+<html lang="zh"><head>
     <meta charset="utf-8">
-    <style>
-      .botCenter{width:100%; height:35px; line-height:35px; background:#FFFFFF; position:fixed; bottom:0px; left:0px; font-size:14px; color:#000; text-align:center;}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>❤️站❤️长❤️推❤️荐❤️</title>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-190316399-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-190316399-3');
+    </script>
+    <style type="text/css">
+        p {
+            margin: 0;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .overlay,
+        .scare {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        p.overlay-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: black;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .overlay-button {
+            display: inline-flex;
+            align-items: center;
+            height: 40px;
+            padding-right: 24px;
+            padding-left: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 4px;
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        .overlay-buttons-wrapper {
+            margin: 24px -8px -8px;
+        }
+
+        #accept-button {
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
+
+        #decline-button {
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        p.overlay-description {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.5);
+            line-height: 1.25;
+            margin-bottom: 16px;
+        }
+
+        a.overlay-link {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(255, 0, 0);
+            line-height: 1;
+            position: relative;
+            margin-top: 16px;
+        }
+
+        a.overlay-link::before {
+            position: absolute;
+            content: "";
+            height: calc(50% + 4px);
+            width: calc(100% + 8px);
+            bottom: -4px;
+            left: -4px;
+            background-color: rgba(132, 94, 194, 0.1);
+        }
+
+        .overlay-body {
+            max-width: 512px;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+        }
+
+        .overlay[hidden] {
+            display: none;
+        }
+
+        .overlay {
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://iw233.cn/api.php?sort=mp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 0;
+        }
+
+        .text-bg {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 24px;
+        }
+
+        .scare {
+            z-index: 1;
+        }
+
+        video#video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        video#video::-webkit-media-controls-enclosure {
+            display: none !important;
+        }
     </style>
-  </head>
-  <body>
-    <h6><div class="botCenter"><a href="https://alwayswalker.github.io/index/">index</a> <a href="https://alwayswalker.github.io/musics/">musics</a></div></h6>
-  </body>
-</html>
+</head>
+
+<body>
+    <div id="overlay" class="overlay" hidden="">
+        <div class="text-bg">
+            <div class="overlay-body">
+                <p class="overlay-title">您是否已满18岁</p>
+                <p class="overlay-description">以下内容可能不适合<b>未满18岁</b>的人群观看，我们需要确认您的年龄。</p>
+                <p class="overlay-description">The following may not be suitable for people <b>under the age of
+                        18</b> and we need to confirm your age.</p>
+                <div class="overlay-buttons-wrapper">
+                    <div id="accept-button" class="overlay-button">已满18岁</div>
+                    <div id="decline-button" class="overlay-button">未满18岁</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scare">
+        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" loop="loop"></video>
+        <img src="https://count.getloli.com/get/@rickroll" style="display: none;">
+    </div>
+    <script type="text/javascript">
+        const video = document.getElementById("video");
+        const overlay = document.getElementById("overlay");
+        const declineButton = document.getElementById("decline-button");
+        const acceptButton = document.getElementById("accept-button");
+        let hasClicked;
+        window.onbeforeunload = function () {
+            if (hasClicked) return true;
+        };
+        function buttonClick1(event) {
+            event.preventDefault();
+            if (!hasClicked) hasClicked = true;
+            overlay.hidden = true;
+            video.play();
+            videoClick();
+        }
+        function buttonClick2(event) {
+            window.location.href = 'https://xingye.me/game/index.php'
+        }
+        function videoClick(event) {
+            if (event) event.preventDefault();
+            // if not fullscreen
+            const { documentElement } = document;
+            if (documentElement.requestFullscreen) documentElement.requestFullscreen();
+            else if (documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
+            else if (documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
+            else if (documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
+        }
+        acceptButton.addEventListener("click", buttonClick1);
+        declineButton.addEventListener("click", buttonClick2);
+        video.addEventListener("click", videoClick);
+    </script>
+
+</body></html>
